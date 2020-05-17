@@ -1,0 +1,779 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Open browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 646000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Random date generator page",
+            "match": {
+              "location": "stepDefinations.RDG_Stepdefs.userIsOnRandomDateGeneratorPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-17T18:22:22.036Z",
+        "before": [
+          {
+            "result": {
+              "duration": 12640000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ServiceHooks.setup()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify the UI layout of RDG form",
+        "description": "",
+        "id": "random-date-generator-test-scenarios;verify-the-ui-layout-of-rdg-form",
+        "after": [
+          {
+            "result": {
+              "duration": 750000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ServiceHooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7899000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be able to view all fields as per UX/FSD",
+            "match": {
+              "location": "stepDefinations.RDG_Stepdefs.iShouldBeAbleToViewAllFieldsAsPerUXFSD()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RandomDate"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7187000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Random date generator page",
+            "match": {
+              "location": "stepDefinations.RDG_Stepdefs.userIsOnRandomDateGeneratorPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-17T18:22:44.079Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5650000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ServiceHooks.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify user is able to generate random dates in pre-defined output format",
+        "description": "",
+        "id": "random-date-generator-test-scenarios;verify-user-is-able-to-generate-random-dates-in-pre-defined-output-format;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 728000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ServiceHooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 200000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter date count as \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterDateCountAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 168000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select output date format as \"YYYY-MM-DD hh:mm:ss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "YYYY-MM-DD hh:mm:ss",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iSelectOutputDateFormatAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 217000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter Start date as \"2020-01-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2020-01-01",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterStartDateAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 259000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter End date as \"2021-12-31\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2021-12-31",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterEndDateAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on RDG",
+            "match": {
+              "location": "stepDefinations.RDG_Stepdefs.iClickOnRDG()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "\"2\" random dates should be generated in \"YYYY-MM-DD hh:mm:ss\" format",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 1
+                },
+                {
+                  "val": "YYYY-MM-DD hh:mm:ss",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.randomDatesShouldBeGeneratedInFormat(int,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RandomDate"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7549000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Random date generator page",
+            "match": {
+              "location": "stepDefinations.RDG_Stepdefs.userIsOnRandomDateGeneratorPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-17T18:22:58.751Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5466000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ServiceHooks.setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify user is able to generate random dates in pre-defined output format",
+        "description": "",
+        "id": "random-date-generator-test-scenarios;verify-user-is-able-to-generate-random-dates-in-pre-defined-output-format;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 707000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ServiceHooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 160000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter date count as \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterDateCountAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 241000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select output date format as \"YYYY-DD-MM hh:mm:ss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "YYYY-DD-MM hh:mm:ss",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iSelectOutputDateFormatAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 199000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter Start date as \"2020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2020",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterStartDateAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 168000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter End date as \"2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2021",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterEndDateAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 116000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on RDG",
+            "match": {
+              "location": "stepDefinations.RDG_Stepdefs.iClickOnRDG()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 45000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "\"3\" random dates should be generated in \"YYYY-DD-MM hh:mm:ss\" format",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 1
+                },
+                {
+                  "val": "YYYY-DD-MM hh:mm:ss",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.randomDatesShouldBeGeneratedInFormat(int,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RandomDate"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7029000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Random date generator page",
+            "match": {
+              "location": "stepDefinations.RDG_Stepdefs.userIsOnRandomDateGeneratorPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-17T18:23:13.416Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6112000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ServiceHooks.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Verify user is able to generate random dates in pre-defined output format",
+        "description": "",
+        "id": "random-date-generator-test-scenarios;verify-user-is-able-to-generate-random-dates-in-pre-defined-output-format;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1941000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ServiceHooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 150000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I enter date count as \"5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterDateCountAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 216000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I select output date format as \"MM-DD-YYYY hh:mm:ss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MM-DD-YYYY hh:mm:ss",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iSelectOutputDateFormatAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 423000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I enter Start date as \"2021-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2021-01",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterStartDateAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 245000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I enter End date as \"2023-12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2023-12",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterEndDateAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 112000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click on RDG",
+            "match": {
+              "location": "stepDefinations.RDG_Stepdefs.iClickOnRDG()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "\"5\" random dates should be generated in \"MM-DD-YYYY hh:mm:ss\" format",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 1
+                },
+                {
+                  "val": "MM-DD-YYYY hh:mm:ss",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.randomDatesShouldBeGeneratedInFormat(int,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RandomDate"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open browser",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3498000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Random date generator page",
+            "match": {
+              "location": "stepDefinations.RDG_Stepdefs.userIsOnRandomDateGeneratorPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-17T18:23:29.718Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5890000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ServiceHooks.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Verify user is able to generate NEW random dates every time the RDG button is clicked",
+        "description": "",
+        "id": "random-date-generator-test-scenarios;verify-user-is-able-to-generate-new-random-dates-every-time-the-rdg-button-is-clicked",
+        "after": [
+          {
+            "result": {
+              "duration": 622000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ServiceHooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 170000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I enter date count as \"2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterDateCountAs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I select output date format as \"YYYY-MM-DD hh:mm:ss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "YYYY-MM-DD hh:mm:ss",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iSelectOutputDateFormatAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 233000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I enter Start date as \"2020-01-01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2020-01-01",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterStartDateAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 289000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I enter End date as \"2021-12-31\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2021-12-31",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.iEnterEndDateAs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "I click on RDG",
+            "match": {
+              "location": "stepDefinations.RDG_Stepdefs.iClickOnRDG()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Verify \"2\" new random dates are generated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.verifyNewRandomDatesGenerated(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 52000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I click on RDG",
+            "match": {
+              "location": "stepDefinations.RDG_Stepdefs.iClickOnRDG()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Verify \"2\" new random dates are generated",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 8
+                }
+              ],
+              "location": "stepDefinations.RDG_Stepdefs.verifyNewRandomDatesGenerated(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RandomDate"
+          }
+        ]
+      }
+    ],
+    "name": "Random Date Generator Test Scenarios",
+    "description": "  As a User I should be able to generate random date based on the selected options",
+    "id": "random-date-generator-test-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/RDG_Scenarios.feature",
+    "tags": [
+      {
+        "name": "@RandomDate",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
